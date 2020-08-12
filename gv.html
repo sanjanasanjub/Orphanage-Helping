@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <title>orphanage</title>
+  <meta name="author" content="Jake Rocheleau">
+  <link rel="shortcut icon" href="index.html">
+  <link rel="icon" href="index.html">
+  <link rel="stylesheet" type="text/css" media="all" href="css/styledonate.css">
+  <link rel="stylesheet" type="text/css" media="all" href="css/responsive.css">
+  <!-- <script src="sample-registration-form-validation.js"></script> -->
+  
+  <script type="text/javascript"> 
+/*  
+function validate()
+{
+ var error="";
+ 
+
+ var uname =document.getElementById( "name" );
+ //var letters = /^[A-Za-z]+$/;  
+  //if (!preg_match("/^[a-zA-Z ]*$/",$name)) 
+  //if(!uname.value.match(letters)) 
+ if( uname.value == "" )
+ {
+ 
+// $error = '<p class="errText">Please enter your full name </p>';
+  // error = " Use only Alphabets. ";
+  document.getElementById( "error_para" ).innerHTML = error;
+  alert("Please fill in the 'Your Employee Name' box.");
+  return false;
+ }
+
+ var uemail = document.getElementById( "email" );
+ //if( uemail.value == "" || uemail.value.indexOf( "@" ) == -1 )
+ var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;  
+ 
+ if( !(uemail.value.match(mailformat)) || (uemail.value == ""))
+ {
+  //error = " You Have To Write Valid Email Address. ";
+  document.getElementById( "error_para" ).innerHTML = error;
+   alert("Please fill in the 'Valid Email' box.");
+  return false;
+ }
+ 
+  var utel = document.getElementById( "tel" );
+ 
+ var phoneNum = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/; 
+ if(!(utel.value.match(phoneNum))) || (utel.value == ""))
+ {
+    document.getElementById( "error_para" ).innerHTML = error;
+   alert("Please fill in the 'Valid Phone number' box.");
+  return false;
+ } 
+
+ var password = document.getElementById( "password_of_user" );
+ if( password.value == "" || password.value >= 8 )
+ {
+  error = " Password Must Be More Than Or Equal To 8 Digits. ";
+  document.getElementById( "error_para" ).innerHTML = error;
+  return false;
+ }
+
+ else
+ {
+  return true;
+ }
+}
+*/
+</script> 
+
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<script src="js/jquery-1.11.0.min.js"></script>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href='http://fonts.googleapis.com/css?family=Istok+Web:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+
+<link rel="stylesheet" href="css/loginstyle.css">
+
+<!--Custom-Theme-files-->
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!--Custom-Theme-files-->
+<!--Start-smoth-scrolling-->
+		<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>	
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+<!--end-smoth-scrolling-->
+</head>
+<body>
+	<!--Header-Starts-Here-->
+	<div class="header" id="home">
+		<div class="container" style="width:52%;margin-top:0px;">
+			<span class="menu"> </span>
+			<script>
+					$( "span.menu" ).click(function() {
+					  $( "ul.navig" ).slideToggle( "slow", function() {
+					    // Animation complete.
+					  });
+					});
+				</script>
+			<div class="navigation">
+				<ul class="navig">
+					<li class="active"><a href="donate.html">Home</a></li>
+                 	<li ><a href="adopt.html">Adopt Child</a></li>
+					<li><a href="#">Contact</a></li>
+                 	<li><a href="login.html">Logout</a></li>
+				</ul>
+			
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+
+	<section id="container">
+		<h2>DONATE  FORM</h2>
+		<form action="gv.php" name="hongkiat" id="hongkiat-form" method="post"  >
+		<div id="wrapping" class="clearfix">
+			<section id="aligned">
+			<input type="text" name="name" id="name" placeholder="Your name" autocomplete="off" tabindex="1" class="txtinput" title="Invalid name : enter only characters" required pattern="[a-zA-Z .]+"               
+               onchange="this.setCustomValidity(this.validity.patternMismatch ? this.title : '');" style="font-size: 1em;">
+			
+			<input type="email" name="email" id="email" placeholder="Your e-mail address" autocomplete="off" tabindex="2" class="txtinput" required style="font-size: 1em;">
+		
+			<input type="number" min=1 name="amount" id="amount" placeholder="enter amount" autocomplete="off" tabindex="3" class="txtinput" required style="font-size: 1em;">
+		
+			<input type="text" name="tel" id="telephone" placeholder="Phone number" tabindex="4" class="txtinput" title="Invalid phone number" pattern="(7|8|9)\d{9}" onchange="this.setCustomValidity(this.validity.patternMismatch ? this.title : '');"  required  style="font-size: 1em;">
+		
+			<textarea name="message" id="message" placeholder="Your Opinion" tabindex="5" class="txtblock" required style="font-size: 1em;"></textarea>
+			</section>
+			
+			<section id="aside" class="clearfix">
+				<section id="recipientcase">
+				<h3>Donation Type</h3>
+					<select id="donate" required name="donate" tabindex="6" class="selmenu" style="font-size: 1em;">
+						<option value="" >Select </option>
+  						<option >Help kids by Money</option>
+  						<option >Tutorials</option>
+  						<option >Health Check</option>
+					</select>
+				</section>
+				
+				<section id="prioritycase" >
+					<h3>Method</h3>
+					<span class="radiobadge">
+						<input type="radio" id="low" name="priorirty" value="onetime">
+						<label for="low" style="font-size: 1em;">ONE TIME DONATION</label>
+					</span>
+				
+					<span class="radiobadge">
+						<input type="radio" id="med" name="priorirty" value="monthly" checked="monthly">
+						<label for="med" style="font-size: 1em;">MONTHLY</label>
+					</span>
+				
+					<span class="radiobadge">
+						<input type="radio" id="high" name="priorirty" value="yearly">
+						<label for="high" style="font-size: 1em;">YEARLY</label>
+					</span>
+				</section>
+			</section>
+		</div>
+
+
+		<section id="buttons">
+			<input type="reset" name="reset" id="resetbtn" class="resetbtn" value="Reset" style="width:30%;">
+			<input type="submit" name="submit" id="submitbtn" class="submitbtn" tabindex="7" value="Submit" style="width:30%;" >
+			<br style="clear:both;">
+		</section>
+		</form>
+		<p id="error_para" ></p>
+		</section>
+
+	
+</body>
+</html>

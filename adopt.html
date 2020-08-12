@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>orphanage</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Orphans Care Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+  <link rel="shortcut icon" href="index.html">
+  <link rel="icon" href="index.html">
+  <link rel="stylesheet" type="text/css" media="all" href="css/styledonate.css">
+  <link rel="stylesheet" type="text/css" media="all" href="css/responsive.css">
+  <!-- <script src="sample-registration-form-validation.js"></script> -->
+  <link rel="stylesheet" type="text/css" href="css/default.css"/>
+  <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<script src="js/jquery-1.11.0.min.js"></script>
+ <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href='http://fonts.googleapis.com/css?family=Istok+Web:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+<!--Custom-Theme-files-->
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+
+<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>	
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+ 
+  <style>
+  
+  form p {
+    font-size: 10pt;
+	}
+	
+  .email
+{
+    border: 1px solid #E1E1E1;
+    height: 18px;
+	
+}
+  form.register input[type=date]
+{
+    border: 1px solid #E1E1E1;
+    height: 18px;
+}
+.txt
+{
+    border: 1px solid #E1E1E1;
+    height: 60px;
+	width : 40%;
+}
+.button1
+{
+    background-color: #d25036; 
+    padding: 8px 10px 8px;
+    color: #fff;
+    text-decoration: none;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+    cursor: pointer;
+    font-size:18px;
+    margin:10px;
+}
+
+</style>
+  
+</head>
+
+<body > 
+<div class="header" style="border-top-width: 0px;" >
+		<div class="container" style="width:51%; margin-top:none;" >
+			<span class="menu"> </span>
+			<script>
+					$( "span.menu" ).click(function() {
+					  $( "ul.navig" ).slideToggle( "slow", function() {
+					    // Animation complete.
+					  });
+					});
+				</script>
+			<div class="navigation">
+				<ul class="navig">
+					<li ><a href="donate.html">Home</a></li>
+                 	<li class="active"><a href="adopt.html">Adopt Child</a></li>
+					<li><a href="#">Contact</a></li>
+                 	<li><a href="login.html">Logout</a></li>
+				</ul>
+			
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+	
+	<section >
+		<form action="adopt.php" method="post" class="register" style="background-color: #FFE;height: 700px;">
+            <h1>Registration</h1>
+			<fieldset class="row1">
+                <legend>Applicant Status
+                </legend>
+                <p>
+                    <label>Single Parent</label>
+                    <input type="radio" name="appstatus" value="Single Parent" required/>
+                    <label>Couple </label>
+                    <input type="radio" name="appstatus" value="Couple" required/>
+					<br><br>
+                </p>
+                <p>
+                    <label>Father Name</label>
+                    <input type="text" name="fathername" title="Invalid name : enter only characters" required pattern="[a-zA-Z .]+"onchange="this.setCustomValidity(this.validity.patternMismatch ? this.title : '');"/>
+                    <label>Mother Name</label>
+                    <input type="text" name="mothername" title="Invalid name : enter only characters" required pattern="[a-zA-Z .]+"onchange="this.setCustomValidity(this.validity.patternMismatch ? this.title : '');"/>
+				</p>
+				<p>
+                    <label>Father Age</label>
+                    <input type="number" min=21 max=99 name="fage" class="email" required/>
+					<label>Mother Age</label>
+                    <input type="number" min=18 max=99 name="mage" class="email" required/>
+				</p>
+				<p>
+					<label>Marriage Date</label>
+                    <input type="date" name="mdate" required />
+				</p>
+            </fieldset>
+			<fieldset class="row1">
+                <legend>Personal Details</legend>
+                <p>
+                    <label>Phone No. </label>
+                    <input type="text" class="long" name="phone" title="Invalid phone number" pattern="(7|8|9)\d{9}" onchange="this.setCustomValidity(this.validity.patternMismatch ? this.title : '');"  required />
+                </p>
+                <p>
+                    <label >Email Id</label>
+                    <input type="emai" class="email long" name="email" required />
+                </p>
+                <p>
+                    <label>Address</label>
+					<textarea class="txt" name="address" required></textarea>
+                </p>
+				<p>
+                    <label >Monthly Income </label>
+                    <input type="number" min=1 class="long email" name="income"  required />
+                </p>
+				<p>
+                    <label>Nationality</label>
+                    <input type="text" class="long" name="nation" required />
+                </p>
+				<p>
+                    <label>Motivation for adoption</label>
+					<textarea class="txt" name="motivation" required></textarea>
+                </p>
+				<p><center><button class="button1" >Request for Adoption </button></center></p>
+            </fieldset>
+        </form>
+		</section>
+
+	<a href="#home" id="toTop" class="scroll" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+</body>
+</html>

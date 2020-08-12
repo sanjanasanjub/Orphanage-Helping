@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Orphananage Helping</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Orphans Care Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<script src="js/jquery-1.11.0.min.js"></script>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href='http://fonts.googleapis.com/css?family=Istok+Web:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+
+<link rel="stylesheet" href="css/loginstyle.css">
+
+<!--Custom-Theme-files-->
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!--Custom-Theme-files-->
+<!--Start-smoth-scrolling-->
+		<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>	
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+<!--end-smoth-scrolling-->
+</head>
+<body>
+	<!--Header-Starts-Here-->
+	<div class="header" id="home">
+		<div class="container" style="width:78%">
+			<span class="menu"> </span>
+			<script>
+					$( "span.menu" ).click(function() {
+					  $( "ul.navig" ).slideToggle( "slow", function() {
+					    // Animation complete.
+					  });
+					});
+				</script>
+			<div class="navigation">
+				<ul class="navig">
+					<li><a href="index.html">Home</a></li>
+                 	<li><a href="helpkids.html">Help Kids</a></li>
+					<li><a href="ourorphanages.html">Our Orphanages</a></li>
+					<li><a href="contact.html">Contact</a></li>
+                 	<li class="active"><a href="login.html">Log in</a></li>
+					<li><a href="admin.html">Admin</a></li>
+				</ul>
+			
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+	<!--Header-Ends-Here-->
+	<!--login-form-starts-Here--><br><br>
+	<div class="login-wrap">
+	<div class="login-html">
+		<input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Sign In</label>
+		<input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Sign Up</label>
+		<div class="login-form">
+			<div class="sign-in-htm">
+				<div class="group">
+				<form action="login.php" method="post">
+					<label for="email" class="label">Email</label>
+					<input id="email" type="text" class="input"  name="email">
+				</div>
+				<div class="group">
+					<label for="pass" class="label">Password</label>
+					<input id="pass" type="password" class="input" data-type="password" name="pass">
+				</div>
+				<div class="group">
+					<input type="submit" class="button" value="Sign In">
+				</div>
+				</form>
+				
+				<div class="hr"></div>
+				<div class="foot-lnk">
+					<a href="forgot.html">Forgot Password?</a>
+				</div>
+			</div>
+			<div class="sign-up-htm">
+			<form action="signup.php" method="post">
+			<br><br><br>
+				<div class="group">
+					<label for="pass" class="label">Email Address</label>
+					<input id="pass" type="text" class="input" name="email">
+				</div>
+				<div class="group">
+					<label for="pass" class="label">Password</label>
+					<input id="pass" type="password" class="input" data-type="password" name="pass">
+				</div>
+				<div class="group">
+					<label for="pass" class="label">Confirm Password</label>
+					<input id="pass" type="password" class="input" data-type="password" name="rpass">
+				</div>
+				
+				<div class="group">
+					<input type="submit" class="button" value="Sign Up">
+				</div>
+				</form>
+				<div class="hr"></div>
+				<div class="foot-lnk">
+					<label for="tab-1"><a href="login.html">Already Member? Login here</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+	<!--login-form-Ends-Here-->
+		<!--footer-Ends-Here-->
+		<div class="footer" >
+			<div class="container">
+				<div class="footer-main">
+					<div class="col-md-4 footer-left">
+						<h3>Follow us</h3>
+						<ul>
+							<li><a href="#" class="active"><span class="fb"> </span></a></li>
+							<li><a href="#"><span class="twit"> </span></a></li>
+							<li><a href="#"><span class="c"> </span></a></li>
+							<li><a href="#"><span class="g"> </span></a></li>
+						</ul>
+					</div>
+					<div class="col-md-4 footer-right">
+						<h3>Location</h3>
+						<ul>
+							<li><span class="ads"> </span><p>SHIMOGA.</p></li>
+						</ul>
+					</div>
+					<div class="col-md-4 footer-right">
+						<h3>Contact us</h3>
+						<ul>
+							<li><span class="ph"> </span><p>Phone :+1 871 234 5678</p></li>
+							<li><span class="mail"> </span><p><a href="mailto:example@email.com">user@example.com</a></p></li>
+						</ul>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				
+			</div>
+			<a href="#home" id="toTop" class="scroll" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+		</div>
+		<!--footer-Ends-Here-->
+		
+		<!-- javascript for login -->
+		
+		<script type="text/javascript">
+			function ValidateUser() {
+			var pword= new RegExp (/^[a-zA-Z0-9]{4,100}$/)
+			if (pword.test(password)) { 
+			return true
+			}
+			else {
+				alert("Incorrect Password or Username")
+				}
+			var email= new RegExp (/^[A-Za-z0-9_.]{2,100}+@[A-Za-z0-9.-]{2,100}+\.[A-Za-z]{2,100}$/)
+			if (email.test(EmailAddress)) {
+		return true
+			}
+			else {
+			alert("Incorrect Password or Username")
+					}
+			}
+</script>
+
+</body>
+</html>
